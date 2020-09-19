@@ -1,0 +1,219 @@
+body {
+	background-image: url(background.png);
+	overflow-x: hidden;
+ }
+ 
+ .header
+ {
+	 background-color:rgb(59, 89, 152);
+	 height: 12.2%;
+	 width:100%;
+	 font-family:tahoma;
+	 border: 1px solid darkblue;
+	 
+	 
+ }
+ 
+ .loginhidden {
+	 display: none;
+ }
+ 
+ .formchat {
+   visibility: visible;
+ }
+ 
+ #loginbtn:hover {
+   border: 3px solid blue;
+ }
+ 
+ #logintbtn:hover {
+	 border: 3px solid blue;
+ }
+ 
+ ul{
+	 list-style: none;
+	 margin: 0;
+	 padding: 0;
+   }
+   
+   ul li{
+	 display:inline-block;
+	 clear: both;
+	 padding: 20px;
+	 border-radius: 30px;
+	 margin-bottom: 2px;
+	 font-family: Helvetica, Arial, sans-serif;
+   }
+   
+   .him{
+	 background: #eee;
+	 float: left;
+   }
+   
+   .me{
+	 float: right;
+	 background: #0084ff;
+	 color: #fff;
+   }
+   
+   .him + .me{
+	 border-bottom-right-radius: 5px;
+   }
+   
+   .me + .me{
+	 border-top-right-radius: 5px;
+	 border-bottom-right-radius: 5px;
+   }
+   
+   .me:last-of-type {
+	 border-bottom-right-radius: 30px;
+   }
+ 
+ #message {
+	 resize: none;
+	 position: fixed;
+	 bottom: 0;
+	 height: 70px;
+ }
+ 
+ #message:hover {
+	 border: 2px solid black;
+ }
+ 
+ #submitibtn {
+	 background-color: cornflowerblue;
+	 width: 1580px;
+	 height: 30px;
+	 position: fixed;
+	 bottom: 0;
+ }
+ 
+ #submitibtn:hover {
+	 border: 2px solid blue;
+ }
+ 
+ #loginbtn {
+	 width: 550px;
+	 height: 40px;
+ }
+ #logintbtn {
+	 width: 550px;
+	 height: 40px;
+ }
+ 
+ @media screen and (min-width: 1820px) {
+ #message {
+	 position: fixed;
+	 bottom: 0;
+	 width: 1500px;
+	 height: 70px;
+ }	
+ #submitibtn {
+	 position: fixed;
+	 bottom: 0;
+	 width: 1506px;
+ }
+ } 
+ 
+ @media screen and (max-width: 1820px) {
+	 #message {
+		 position: fixed;
+		 bottom: 0;
+		 width: 1500px;
+		 height: 70px;
+	 }	
+	 #submitibtn {
+		 position: fixed;
+		 bottom: 0;
+		 width: 1506px;
+	 }
+	 } 
+ 
+ @media screen and (max-width: 1000px) {
+ #message {
+	 position: fixed;
+	 bottom: 0;
+	 width: 1500px;
+	 height: 70px;
+ }	
+ #submitibtn {
+ 
+	 position: fixed;
+	 bottom: 0;
+	 width: 1500px;
+ }
+ } 
+ 
+ @media screen and (max-width: 800px) { 
+ #loginbtn {
+	 width: 300px;
+	 height: 40px;
+ }
+ #logintbtn {
+	 width: 300px;
+	 height: 40px;
+ }
+ #message {
+	 position: fixed;
+	 bottom: 0;
+	 width: 320px;
+	 height: 85px;
+ }	
+ #submitibtn {
+	 position: fixed;
+	 bottom: 0;
+	 width: 325px;
+	 height: 40px;
+ }
+ }
+ 
+ @media screen and (max-width: 530px){
+	 #message {
+		 position: fixed;
+		 bottom: 0;
+		 width: 220px;
+		 height: 85px;
+	 }	
+	 #submitibtn {
+		 position: fixed;
+		 bottom: 0;
+		 width: 225px;
+		 height: 40px;
+	 }
+ }
+ 
+ @media screen and (max-width: 322px) { 
+	 #loginbtn {
+		 width: 250px;
+		 height: 40px;
+	 }
+	 #logintbtn {
+		 width: 250px;
+		 height: 40px;
+	 }
+	 #message {
+		 position: fixed;
+		 bottom: 0px;
+		 left: 0px;
+		 width: 300px;
+		 height: 85px;
+	 }	
+	 #submitibtn {
+		 position: fixed;
+		 bottom: 0px;
+		 left: 0px;
+		 width: 305px;
+		 height: 40px;
+	 }
+ }
+ 
+ @media screen and (max-width: 251px) { 
+		 #loginbtn {
+			 width: 150px;
+			 height: 40px;
+		 }
+		 #logintbtn {
+			 width: 150px;
+			 height: 40px;
+		 }
+ }

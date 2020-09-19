@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Web Chat App</title> 
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <div class="header">
+   <center><img src="" id="profilepic" style="color:white;background-color:rgb(59, 89, 152); font-size:20px;font-family: Helvetica, Arial, sans-serif;"></center>
+    <center><h1 id="nametitle" style="color:black;background-color:rgb(59, 89, 152); font-size:19px;font-family: Helvetica, Arial, sans-serif;">MESSENGER APP</h1></center>
+</div>
+<br>
+<br>
+<div class="loginhidden"id="formchat">
+  <ul id="messages"></ul>
+
+  <form onsubmit="return sendMessage();">
+  <br>
+  <br>
+  <br>
+  <textarea id="message" placeholder="Enter message..." rows="3" cols="195"></textarea>
+  <input type="submit" id="submitibtn">
+  </form>
+</div>
+
+<center><button onclick="login()" id="loginbtn" style="background-color: cornflowerblue;position: relative;top: 150px;"><img src="facebook.png" width="5%"><b>LOGIN WITH FACEBOOK</b></button></center>
+<center><button onclick="logint()" id="logintbtn" style="background-color: lightblue;position: relative;top: 150px;"><img src="anon-user.png" width="5%"><b> LOGIN AS ANONYMOUS</b></button></center>
+
+<!-- SCRIPTS-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDjkpETJpxoxp7WNxzEtJNelx8qC648d20",
+    authDomain: "messengerwebapp.firebaseapp.com",
+    databaseURL: "https://messengerwebapp.firebaseio.com",
+    projectId: "messengerwebapp",
+    storageBucket: "messengerwebapp.appspot.com",
+    messagingSenderId: "766440526756",
+    appId: "1:766440526756:web:ab377c36320e7ed05a2731",
+    measurementId: "G-MCJWN8YVSL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="app.js"></script>
+</body>
+</html>
