@@ -27,7 +27,7 @@ function logint(){
     var logintbtn = document.getElementById("logintbtn") //Anonymous login button
     var nametitle = document.getElementById("nametitle") //User display name
     var prompta = prompt("What is your name?") //Ask for user name
-    nametitle.innerHTML = prompta   //User name equals to prompt
+    nametitle.innerHTML = prompta + " (Anonymous)"  //User name equals to prompt
     loginbtn.setAttribute("class", "loginhidden")   //Make facebook login button hidden
     logintbtn.setAttribute("class", "loginhidden")  //Make anonymous login button hidden
     document.getElementById("formchat").setAttribute("class", "formchat") //Make chat area visible 
