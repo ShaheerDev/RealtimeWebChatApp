@@ -182,7 +182,7 @@ body {
 	 }
  }
  
- @media screen and (max-width: 322px) { 
+ @media screen and (max-width: 330px) { 
 	 #loginbtn {
 		 width: 250px;
 		 height: 40px;
